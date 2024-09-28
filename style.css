@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    background-color: #3cac17;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+    font-family: 'Press Start 2P', cursive; 
+}
+
+.block1 {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    background-color: #f6ea8e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block1 ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+    justify-content: center;
+    align-items: center;
+}
+
+.block1 ul li {
+    padding: 10px 0;
+    width: 300px; 
+}
+
+.block1 ul li a {
+    text-decoration: none;
+    color: #333;
+    background-color: #19a8f3;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.block1 ul li a:hover {
+    background-color: #ee7486;
+    color: #000;
+    transition: 0.3s;
+}
+
+.block2 {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #f6ea8e;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.block2 p {
+    margin-bottom: 10px;
+    text-indent: 20px; 
+}
+
+.block2 img {
+    display: block;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.minecraft-table {
+    margin: 20px auto; 
+    border-collapse: collapse;
+    border: 2px solid #f6ea8e;
+}
+
+.minecraft-table td {
+    border: 1px solid #f6ea8e; 
+    padding: 10px; 
+    font-family: 'Press Start 2P', cursive; 
+    text-align: center; 
+}
+
+.block3 {
+    grid-column: 3;
+    grid-row: 2 / 5;
+    background-color: #f6ea8e;
+    padding: 20px;
+}
+
+.block4 {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: #f6ea8e;
+    padding: 15px;
+}
+
+.block5 {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    background-color: #c7862a;
+    padding: 20px;
+    text-align: right;
+    font-size: 15px;
+    line-height: 25px;
+    position: relative;
+    height: 100px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.box {
+    background-color: #c6effc;
+    border: 1px solid black;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+}
+
